@@ -1,18 +1,41 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LookedAtInteractiveDisplayText : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private IInteractive lookedAtInteractive;
+    private Text displayText;
+
+    private void Awake()
     {
-        
+        displayText = GetComponent<Text>();
+        UpdateDisplayText();
+    }
+    private void UpdateDisplayText()
+    {
+        if (lookedAtInteractive != null)
+            displayText.text = lookedAtInteractive.displayText;
+        else
+            displayText.text = string.Empty;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void onlookedatinteractivechanged(IInteractive newlookedatinteractive)
     {
-        
+        lookedAtInteractive = newlookedatinteractive;
+        UpdateDisplayText();
     }
+
+    #region event subscription / unsubscription
+    private void OnEnable()
+    {
+        DetectLookedAtInteractive.lookedatinteractivechanged += onlookedatinteractivechanged;
+    }
+
+    private void OnDisable()
+    {
+        DetectLookedAtInteractive.lookedatinteractivechanged -= onlookedatinteractivechanged;
+    }
+    #endregion
 }

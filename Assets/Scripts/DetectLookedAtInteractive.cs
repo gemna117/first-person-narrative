@@ -12,15 +12,31 @@ public class DetectLookedAtInteractive : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
+    public static event Action<IInteractive> lookedatinteractivechanged;
+
     public IInteractive LookedAtInteractive
     {
         get {return lookedAtInteractive; }
-        set {lookedAtInteractive = value; }
+        private set
+        {
+            bool isinteracticechanged = value != lookedAtInteractive;
+            if (isinteracticechanged)
+            {
+            lookedAtInteractive = value;
+                    lookedatinteractivechanged.invoke();
+            }
+        }
     }
 
     private IInteractive lookedAtInteractive;
 
     private void FixedUpdate()
+    {
+        LookedAtInteractive = getlookedatinteractive();
+
+    }
+
+    private IInteractive getlookedatinteractive()
     {
         Debug.DrawRay(raycastOrigin.position, raycastOrigin.forward, Color.red);
         RaycastHit hitInfo;
@@ -34,8 +50,6 @@ public class DetectLookedAtInteractive : MonoBehaviour
             interactive = hitInfo.collider.gameObject.GetComponent<IInteractive>();
         }
 
-        if (interactive != null)
-            interactive.InteractWith();
-        
+        return interactive;
     }
 }
