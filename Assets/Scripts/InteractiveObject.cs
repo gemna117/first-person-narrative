@@ -2,12 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
-    private string displayText = nameof(InteractiveObject);
+    protected string displaytext = nameof(InteractiveObject);
 
-    public string displaytext => displayText;
+    public string Displaytext => displaytext;
+
+    string IInteractive.displayText { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
     private AudioSource audioSource;
 
     private void Awake()
@@ -15,7 +19,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         audioSource = GetComponent<AudioSource>();
     }
 
-    public void InteractWith()
+    public virtual void InteractWith()
     {
         try
         {
@@ -24,7 +28,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
         }
         catch (System.Exception)
         {
-            throw now System.Exception("missing audio source component.");
+            throw new System.Exception("missing audio source component.");
         }
         Debug.Log($"player just interacted with {gameObject.name}.");
     }

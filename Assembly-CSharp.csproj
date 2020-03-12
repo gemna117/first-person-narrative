@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\InteractWithLookedAt.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractive.cs" />
     <Compile Include="Assets\Scripts\LookedAtInteractiveDisplayText.cs" />
+    <Compile Include="Assets\Scripts\TitleMenu.cs" />
     <Compile Include="Assets\Scripts\ToggleSetActive.cs" />
     <Reference Include="Unity.ProGrids">
       <HintPath>C:/Users/HP/Documents/GitHub/first-person-narrative/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>

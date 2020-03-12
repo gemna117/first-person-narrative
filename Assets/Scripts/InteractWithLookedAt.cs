@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class InteractWithLookedAt : MonoBehaviour
 {
+    [SerializeField]
+    private DetectLookedAtInteractive detectLookedAtInteractive;
+
     private IInteractive lookedAtInteractive;
     // Update is called once per frame
     void Update()
