@@ -8,7 +8,7 @@ public class InteractiveObject : MonoBehaviour, IInteractive
     [SerializeField]
     protected string displaytext = nameof(InteractiveObject);
 
-    public string Displaytext => displaytext;
+    public virtual string Displaytext => displaytext;
 
     string IInteractive.displayText { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 

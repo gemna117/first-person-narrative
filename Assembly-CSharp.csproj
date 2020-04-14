@@ -65,7 +65,9 @@
     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
     <Compile Include="Assets\Scripts\InteractWithLookedAt.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractive.cs" />
+    <Compile Include="Assets\Scripts\InventoryObject.cs" />
     <Compile Include="Assets\Scripts\LookedAtInteractiveDisplayText.cs" />
+    <Compile Include="Assets\Scripts\PlayerInventory.cs" />
     <Compile Include="Assets\Scripts\TitleMenu.cs" />
     <Compile Include="Assets\Scripts\ToggleSetActive.cs" />
     <Reference Include="Unity.ProGrids">
