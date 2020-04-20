@@ -5,10 +5,17 @@ using UnityEngine;
 public class InventoryObject : InteractiveObject
 {
     [SerializeField]
+    private string objectName = nameof(InventoryObject);
+
+    [SerializeField]
     private string description;
 
     [SerializeField]
-    public string objectName;
+    private Sprite icon;
+
+    public string objectname => objectName;
+    public Sprite Icon => icon;
+    public string Description => description;
 
     private new Renderer renderer;
     private new Collider collider;
@@ -27,8 +34,10 @@ public class InventoryObject : InteractiveObject
     {
         base.InteractWith();
         PlayerInventory.inventoryObjects.Add(this);
+        InventoryMenu.Instance.additemtomenu(this);
         GetComponent<Renderer>().enabled = false;
         renderer.enabled = false;
         collider.enabled = false;
+        Debug.Log($"inventory object name {InventoryMenu.Instance.name}");
     }
 }

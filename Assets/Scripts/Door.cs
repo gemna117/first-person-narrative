@@ -17,20 +17,20 @@ public class Door : InteractiveObject
     [SerializeField]
     private string lockeddisplaytext = "locked";
 
-    //public override string Displaytext => isLocked ? lockeddisplaytext : base.Displaytext;
+    public override string Displaytext => isLocked ? lockeddisplaytext : base.Displaytext;
 
-    public override string displaytext
-    {
-      get
-    {
-            string toReturn;
-      if (isLocked)
-        toReturn = hasKey ? $"Use {key.objectName}" : lockeddisplaytext;
-      else
-        toReturn = base.displaytext;
-            return toReturn;
-    }
-    }
+    //public override string displaytext
+    //{
+      //get
+    //{
+      //      string toReturn;
+      //if (isLocked)
+        //toReturn = hasKey ? $"Use {key.objectName}" : lockeddisplaytext;
+      //else
+        //toReturn = base.displaytext;
+      //      return toReturn;
+    //}
+    //}
 
     private bool hasKey => PlayerInventory.inventoryObjects.Contains(key);
     private Animator animator;
