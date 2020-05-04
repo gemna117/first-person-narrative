@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+git fetch origin
+git checkout -b master origin/master
+git merge code-review
