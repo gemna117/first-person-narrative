@@ -13,6 +13,9 @@ public class DetectLookedAtInteractive : MonoBehaviour
     [SerializeField]
     private float maxRange = 5.0f;
 
+    [SerializeField]
+    private LayerMask interactablelayer;
+
     public static event Action<IInteractive> lookedatinteractivechanged;
 
     public IInteractive LookedAtInteractive

@@ -1,6 +1,6 @@
 Win64
 PlayerPath?
-C:/Users/HP/Documents/GitHub/first-person-narrative/Builds/first person narrative.exe
+C:/Builds/first person narrative.exe
 SceneListBegin?
 Assets/Scenes/InventoryMenu.unity
 Assets/Scenes/TitleMenu.unity
@@ -208,7 +208,7 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 219ec6059796d8951d2adcd8505d0dc2 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.TouchPad
 61faedcd907718913efd3ec146822d0e Assembly-CSharp-firstpass.dll:UnityStandardAssets.Vehicles.Ball.Ball
 a8cd58c1680eb5251e5604e560cf89e9 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.TimedObjectDestructor
-5fa53d7e9b2d213e57aeafacdaaa1af5 Assembly-CSharp.dll:.DetectLookedAtInteractive
+2d5a7f30a6e904597bb11de7a9d526ec Assembly-CSharp.dll:.DetectLookedAtInteractive
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 91437bb2ca71eaa3e7ad0b4bbe9c5b4c Assembly-CSharp.dll:.InventoryMenu
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
