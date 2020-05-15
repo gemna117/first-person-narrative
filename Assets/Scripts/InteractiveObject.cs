@@ -6,9 +6,9 @@ using UnityEngine;
 public class InteractiveObject : MonoBehaviour, IInteractive
 {
     [SerializeField]
-    protected string displaytext = nameof(InteractiveObject);
+    protected string displayText = nameof(InteractiveObject);
 
-    public virtual string Displaytext => displaytext;
+    public virtual string DisplayText => displayText;
 
     string IInteractive.displayText { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 

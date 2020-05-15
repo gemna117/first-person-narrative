@@ -88,7 +88,7 @@ public class InventoryMenu : MonoBehaviour
 
     private void handleinput()
     {
-        if (Input.GetButtonDown("")) ;
+        if (Input.GetButtonDown("Show Inventory")) ;
         if (isvisible)
             hidemenu();
         else

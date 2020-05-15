@@ -17,18 +17,18 @@ public class Door : InteractiveObject
     [SerializeField]
     private string lockeddisplaytext = "locked";
 
-    public override string Displaytext => isLocked ? lockeddisplaytext : base.Displaytext;
+    public override string DisplayText => isLocked ? lockeddisplaytext : base.DisplayText;
 
-    //public override string displaytext
+    //public override string DisplayText
     //{
-      //get
+    //get
     //{
       //      string toReturn;
       //if (isLocked)
-        //toReturn = hasKey ? $"Use {key.objectName}" : lockeddisplaytext;
+      //  toReturn = hasKey ? $"Use {key.objectName}" : lockeddisplaytext;
       //else
         //toReturn = base.displaytext;
-      //      return toReturn;
+          //  return toReturn;
     //}
     //}
 
@@ -39,7 +39,7 @@ public class Door : InteractiveObject
 
     public Door()
     {
-        displaytext = nameof(Door);
+        base.displayText = nameof(Door);
     }
 
     protected override void Awake()
@@ -67,7 +67,7 @@ public class Door : InteractiveObject
             else
             {
                 animator.SetBool(shouldOpenAnimParameter, true);
-                displaytext = string.Empty;
+                base.displayText = string.Empty;
                 isOpen = true;
                 unlockdoor();
             }

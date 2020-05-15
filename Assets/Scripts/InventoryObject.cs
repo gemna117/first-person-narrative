@@ -27,7 +27,7 @@ public class InventoryObject : InteractiveObject
     }
     public InventoryObject()
     {
-        displaytext = $"Take {objectName}";
+        displayText = $"Take {objectName}";
     }
 
     public override void InteractWith()

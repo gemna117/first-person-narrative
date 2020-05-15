@@ -2,8 +2,8 @@ Win64
 PlayerPath?
 C:/Builds/first person narrative.exe
 SceneListBegin?
-Assets/Scenes/InventoryMenu.unity
 Assets/Scenes/TitleMenu.unity
+Assets/Scenes/Inventory.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 01aa15e337e3a9c62f15153dfac6d589 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -108,7 +108,7 @@ e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.C
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 e1bbf0ab858085e38fae6b12ebbdcd35 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 201e3fde670b00545944bb3db215c80a UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-e9eca92741955144f82b9237d085b318 Assembly-CSharp.dll:.InteractWithLookedAt
+7f6180fa92310c5e1cd53bc232a3c21e Assembly-CSharp.dll:.InteractWithLookedAt
 00274a21279f5cb831ce20f895049e38 Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -142,7 +142,7 @@ a8b6c919b2049fcc280823488144371f Assembly-CSharp-firstpass.dll:UnityStandardAsse
 fdd7177da17032ba94d98037cc97bb49 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.AxisTouchButton
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 f03168bb2f3505e6cc0ba61aff5d31ab Assembly-CSharp-firstpass.dll:UnityStandardAssets.Cameras.LookatTarget
-ba0eb742f97a9379c896d84840f4201d Assembly-CSharp.dll:.ToggleSetActive
+9361dbac8d27485972785af57406e76b Assembly-CSharp.dll:.ToggleSetActive
 c88c4199b288356ec3eb2f0d85abc619 Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.ButtonHandler
 0e0c7e6c34f2d19ba95cf463e39888b1 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Characters.FirstPerson.HeadBob
 e9389e944eb81a3a9df56fcdb09ce6a9 Unity.ProBuilder.dll:UnityEngine.ProBuilder.TriggerBehaviour
@@ -153,13 +153,13 @@ a4d879eed97e8d86fd752672fc026fa2 Assembly-CSharp-firstpass.dll:UnityStandardAsse
 f8bd7a92bf9f22d289759689ae7b1fd4 Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.SmoothFollow
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
-cbd1885a13b84a160ee163658e7c6e44 Assembly-CSharp.dll:.InteractiveObject
+b367fb3729026c68d08fd68320cb2653 Assembly-CSharp.dll:.InteractiveObject
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.CrossPlatformInput.MobileControlRig
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp-firstpass.dll:UnityStandardAssets.Utility.ObjectResetter
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.ProGrids.dll:UnityEngine.ProGrids.IgnoreSnap
-b5baa56d525420fd1002c8397f5f6c66 Assembly-CSharp.dll:.Door
+6ea54968e1d084acafe3bb6f19fb5e2a Assembly-CSharp.dll:.Door
 4fd8bf02e3089425d3502e26c44ba31a Unity.TextMeshPro.dll:TMPro.TextContainer
-eb1e17278d30adde73908fd19858415d Assembly-CSharp.dll:.InventoryObject
+5f456838fe28e19e329df1921abb8e06 Assembly-CSharp.dll:.InventoryObject
 8216ca00094987954bcf22fd5ccf9bfd Assembly-CSharp-firstpass.dll:UnityStandardAssets.Cameras.FreeLookCam
 e6ae40841db498b6e673877ac45ad208 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour

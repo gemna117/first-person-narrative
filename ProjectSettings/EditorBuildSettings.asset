@@ -8,13 +8,13 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: Assets/Scenes/Inventory.unity
-    guid: 6cba1d7e59f3e89498804ac38a23668b
-  - enabled: 1
-    path: Assets/Scenes/InventoryMenu.unity
-    guid: 48ba67e6af7d61e458a074fa427f98bd
   - enabled: 1
     path: Assets/Scenes/TitleMenu.unity
     guid: 5a39ddcf7e11b044b846634dd4e31acd
+  - enabled: 1
+    path: Assets/Scenes/Inventory.unity
+    guid: 6cba1d7e59f3e89498804ac38a23668b
+  - enabled: 0
+    path: Assets/Scenes/InventoryMenu.unity
+    guid: 48ba67e6af7d61e458a074fa427f98bd
   m_configObjects: {}

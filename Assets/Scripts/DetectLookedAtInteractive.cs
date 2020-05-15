@@ -18,6 +18,11 @@ public class DetectLookedAtInteractive : MonoBehaviour
 
     public static event Action<IInteractive> lookedatinteractivechanged;
 
+    internal void InteractWith()
+    {
+        throw new NotImplementedException();
+    }
+
     public IInteractive LookedAtInteractive
     {
         get {return lookedAtInteractive; }
